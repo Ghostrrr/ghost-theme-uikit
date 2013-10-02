@@ -1,0 +1,13 @@
+{{!< default}}
+
+{{! The main content area on the homepage }}
+<section class="rrr-content" role="main">
+
+    {{#foreach posts}}
+      {{> post-list}}
+    {{/foreach}}
+
+    {{! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+</section>

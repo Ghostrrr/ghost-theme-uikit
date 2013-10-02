@@ -1,0 +1,23 @@
+<article class="rrr-article {{post_class}}">
+  <header class="article-header">
+    <h2 class="uk-article-title"><a href="/{{slug}}" rel="bookmark">{{title}}</a></h2>
+    <p class="uk-article-meta">
+      Written by
+      <span class="author">{{author.name}}</span>
+      on
+      <time class="updated"
+        datetime="{{date published_at format='MMMM, DD YYYY'}}"
+        pubdate="">
+        {{date published_at format='MMMM, DD YYYY'}}
+      </time>
+    </p>
+  </header>
+  <section class="article-excerpt">
+    <p>{{excerpt}}&hellip;</p>
+  </section>
+  <footer class="article-footer">
+    <p class="uk-article-more">
+      <a href="{{url}}" title="{{title}}">Continue Reading</a>
+    </p>
+  </footer>
+</article>

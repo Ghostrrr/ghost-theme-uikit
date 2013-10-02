@@ -1,0 +1,158 @@
+/*
+ * Global styles
+ */
+.tm-text-white {
+  color: white;
+}
+.tm-text-italic {
+  font-style: italic;
+}
+
+/*
+ * Body
+ */
+body {
+  background: linear-gradient(to bottom, rgba(115, 80, 80, 0) 40%, #72504f) 0 0 fixed, linear-gradient(to right, #68aeb6 5%, #b4cca8 30%, #ede1a2 50%, #ede1a2 80%, #d0be92 100%) 0 0 fixed;
+  background-size: 100% 100%, 100% 100%;
+  color: #85878D;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+ * Header
+ */
+.header-banner {
+  height: 450px;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+}
+.header-banner .tm-logo {
+  padding-bottom: 40px;
+}
+
+/*
+ * Container
+ */
+.rrr-container {
+  width: 100%;
+  background: #fff;
+}
+
+/*
+ * Main
+ */
+.rrr-content {
+  padding: 20px 35px;
+}
+
+/*
+ * Article
+ */
+.rrr-article {}
+.rrr-article .uk-article-title{
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 60px;
+  color: #444;
+}
+.rrr-article .uk-article-title a{
+  color: #444;
+}
+.rrr-article .uk-article-meta{
+  color: #B3B5B7;
+  text-transform: uppercase;
+}
+.rrr-article .uk-article-meta .author,
+.rrr-article .uk-article-meta .updated {
+  color: #9B6948;
+}
+.rrr-article .uk-article-more a{
+  color: #956240;
+}
+
+/*
+ * Pagination
+ */
+.pagination {
+  padding: 10px 0;
+  list-style: none;
+  text-align: center;
+}
+.pagination .newer-posts, .pagination .older-posts {
+  color: #666;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-bottom-color: rgba(0,0,0,0.2);
+  background: #fafafa;
+  text-shadow: 0 1px 0 #fff;
+  padding: 3px 5px;
+  border-radius: 1px;
+  text-decoration: none;
+}
+.pagination .newer-posts:hover, .pagination .older-posts:hover,
+.pagination .newer-posts:focus, .pagination .older-posts:focus {
+  background-color: #fff;
+  color: #666;
+  outline: 0;
+  background-image: none;
+}
+.pagination .newer-posts {
+  float: left;
+}
+.pagination .older-posts {
+  float: right;
+}
+.pagination .page-number {
+
+}
+
+/*
+ * Footer
+ */
+.rrr-footer {
+  padding: 20px 35px;
+  background: #3e4145;
+}
+.rrr-footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.rrr-footer a:hover{
+  text-decoration: underline;
+}
+
+/*
+ * Medias
+ */
+
+@media (min-width: 960px) {
+  .rrr-container {
+    max-width: 90%;
+    margin: 60px auto;
+  }
+}
+
+@media (min-width: 1220px) {
+  .rrr-container {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-banner {
+    height: 300px;
+  }
+  .rrr-content {
+    padding: 15px 20px;
+  }
+  .rrr-article .uk-article-title{
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 40px;
+  }
+}

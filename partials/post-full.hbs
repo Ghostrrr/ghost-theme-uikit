@@ -1,0 +1,27 @@
+<article class="rrr-article {{post_class}}">
+  <header class="article-header">
+    <h1 class="uk-article-title"><a href="/{{slug}}" rel="bookmark">{{title}}</a></h1>
+    <p class="uk-article-meta">
+      Written by
+      <span class="author">{{author.name}}</span>
+      on
+      <time class="updated"
+        datetime="{{date published_at format='MMMM, DD YYYY'}}"
+        pubdate="">
+        {{date published_at format='MMMM, DD YYYY'}}
+      </time>
+    </p>
+    {{#if image}}
+      <figure class="featured-image">
+        <img src="/content/images/{{image}}" class="attachment-post-thumbnail" alt="">
+      </figure>
+    {{/if}}
+  </header>
+
+  <section class="article-content">
+    {{content}}
+  </section>
+
+  <footer class="article-footer">
+  </footer>
+</article>
