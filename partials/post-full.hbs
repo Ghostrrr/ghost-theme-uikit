@@ -11,9 +11,9 @@
         {{date published_at format='MMMM, DD YYYY'}}
       </time>
     </p>
-    {{#if image}}
+    {{#if profile_image}}
       <figure class="featured-image">
-        <img src="/content/images/{{image}}" class="attachment-post-thumbnail" alt="">
+        <img src="/content/images/{{img_url profile_image}}" class="attachment-post-thumbnail" alt="">
       </figure>
     {{/if}}
   </header>
